@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ruby:2.7.2
+FROM ruby:2.7
 RUN apt-get update -qq && apt-get install -y nodejs npm postgresql-client
 WORKDIR /thales_DPre
 COPY Gemfile /thales_DPre/Gemfile

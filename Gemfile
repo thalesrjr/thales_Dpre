@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '2.7.8'
 
 gem 'rails', '~> 6.0.6', '>= 6.0.6.1'
 gem 'pg', '>= 0.18', '< 2.0'
@@ -11,14 +11,41 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
+gem 'bootsnap', '>= 1.4.2', require: false
+# gem 'bundler', '~> 2.2', '>= 2.2.33'
 
-# gem 'image_processing', '~> 1.2'
+# variaveis de ambiente
+gem 'figaro'
 
-gem 'bootsnap', '>= k61.4.2', require: false
+#formulario simples
+gem 'simple_form'
+
+#Geenciamento de usuario
+gem 'devise'
+
+#engine html
+gem 'haml'
+gem 'haml-rails'
+#gem "erb2haml, :group => development"
+
+#paginação
+# gem 'kaminari'
+# gem 'kaminari-bootstrap'
+# Busca
+# gem 'ransack'
+# Melhorar select
+# gem 'select2-rails'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'kaminari'
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'awesome_print'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -28,6 +55,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'mailcatcher'
 end
 
 group :test do
