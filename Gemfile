@@ -14,6 +14,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 # gem 'bundler', '~> 2.2', '>= 2.2.33'
 
+# CSS
+gem 'bootstrap'
+#java script
+gem 'jquery-rails'
 # variaveis de ambiente
 gem 'figaro'
 
