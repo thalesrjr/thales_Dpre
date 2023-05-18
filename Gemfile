@@ -30,7 +30,8 @@ gem 'devise'
 #engine html
 gem 'haml'
 gem 'haml-rails'
-#gem "erb2haml, :group => development"
+#gem 'erb2haml', :group => development
+gem 'html2haml'
 
 #paginação
 # gem 'kaminari'
