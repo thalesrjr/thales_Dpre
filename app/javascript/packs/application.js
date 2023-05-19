@@ -19,3 +19,10 @@ require("channels")
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+(() => {
+    'use strict'
+  
+      document.querySelector('#navbarSideCollapse').addEventListener('click', () => {
+      document.querySelector('.offcanvas-collapse').classList.toggle('open')
+    })
+  })()
