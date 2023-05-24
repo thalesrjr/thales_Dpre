@@ -32,7 +32,7 @@ gem 'haml'
 gem 'haml-rails'
 #gem 'erb2haml', :group => development
 gem 'html2haml'
-
+gem 'nokogiri'
 #paginação
 # gem 'kaminari'
 # gem 'kaminari-bootstrap'

@@ -162,9 +162,8 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.2)
     minitest (5.18.0)
-    msgpack (1.7.0)
+    msgpack (1.7.1)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     net-imap (0.3.4)
@@ -177,8 +176,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.15.0)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.15.2-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.5.3)
@@ -292,8 +290,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.3)
-      mini_portile2 (~> 2.8.0)
+    sqlite3 (1.6.3-x86_64-linux)
     sqlite3-ruby (1.3.3)
       sqlite3 (>= 1.3.3)
     temple (0.10.1)
@@ -352,6 +349,7 @@ DEPENDENCIES
   kaminari
   listen (~> 3.2)
   mailcatcher
+  nokogiri
   pg (>= 0.18, < 2.0)
   pry
   pry-rails

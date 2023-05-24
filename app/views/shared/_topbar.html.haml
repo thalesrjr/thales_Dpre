@@ -1,0 +1,40 @@
+%nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.bg-dark{"aria-label" => "Main navigation"}
+  .container-fluid
+    %a.navbar-brand{href: "#"} Offcanvas navbar
+    %button#navbarSideCollapse.navbar-toggler.p-0.border-0{"aria-label" => "Toggle navigation", type: "button"}
+      %span.navbar-toggler-icon
+    #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
+      %ul.navbar-nav.me-auto.mb-2.mb-lg-0
+        %li.nav-item
+          %a.nav-link.active{"aria-current" => "page", href: "#"} Dashboard
+        %li.nav-item
+          %a.nav-link{href: "#"} Notifications
+        %li.nav-item
+          %a.nav-link{href: "#"} Profile
+        %li.nav-item
+          %a.nav-link{href: "#"} Switch account
+        %li.nav-item.dropdown
+          %a.nav-link.dropdown-toggle{"aria-expanded" => "false", "data-bs-toggle" => "dropdown", href: "#"} Settings
+          %ul.dropdown-menu
+            %li
+              %a.dropdown-item{href: "#"} Action
+            %li
+              %a.dropdown-item{href: "#"} Another action
+            %li
+              %a.dropdown-item{href: "#"} Something else here
+      %form.d-flex{role: "search"}
+        %input.form-control.me-2{"aria-label" => "Search", placeholder: "Search", type: "search"}/
+        %button.btn.btn-outline-success{type: "submit"} Search
+.nav-scroller.bg-body.shadow-sm
+  %nav.nav{"aria-label" => "Secondary navigation"}
+    %a.nav-link.active{"aria-current" => "page", href: "#"} Dashboard
+    %a.nav-link{href: "#"}
+      Friends
+      %span.badge.text-bg-light.rounded-pill.align-text-bottom 27
+    %a.nav-link{href: "#"} Explore
+    %a.nav-link{href: "#"} Suggestions
+    %a.nav-link{href: "#"} Link
+    %a.nav-link{href: "#"} Link
+    %a.nav-link{href: "#"} Link
+    %a.nav-link{href: "#"} Link
+    %a.nav-link{href: "#"} Link
