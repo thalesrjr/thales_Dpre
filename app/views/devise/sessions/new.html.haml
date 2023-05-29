@@ -10,17 +10,15 @@
       %img#icon{alt: "User Icon", src: "http://danielzawadzki.com/codepen/01/icon.svg"}/
     / Login Form
     %form
-      
       = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         .form-inputs
-          = f.input :email,required: false, label: false, autofocus: true,input_html: { autocomplete: "email" }
-          = f.input :password, label: false,                            
-            required: false,                                 
-            input_html: { autocomplete: "current-password" } 
+          = f.input :email,required: false, label: false, autofocus: true,input_html: { autocomplete: "email" },placeholder: 'E-mail'
+          = f.input :password, label: false,required: false,    input_html: { autocomplete: "current-password" },placeholder: 'Senha'
           = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
         .form-actions
           = f.button :submit, "Log in"
       = render "devise/shared/links"
             
+      
      
          
