@@ -9,8 +9,12 @@
           %a.nav-link.active{"aria-current" => "page", href: "#"} Inicio
         %li.nav-item
           %a.nav-link{href: "#"} Notifications
+        -# - if user_signed_in?
         %li.nav-item
-          %a.nav-link{href: "#"} empresa 
-        %li.nav-item
-          %a.nav-link{href: user_session_path} Login/Cadastro
-        
+          %a.nav-link{href: companies_new_path} empresa 
+        - unless user_signed_in?
+          %li.nav-item
+            %a.nav-link{href: user_session_path} Login/Cadastro
+        - if user_signed_in?
+          %li.nav-item
+            = link_to "Sair", destroy_user_session_path, method: :delete, class: 'nav-link'
