@@ -17,4 +17,5 @@
           = f.input :password_confirmation,required: true,label: false,input_html: { autocomplete: "new-password" },placeholder: 'digite a senha novamente'
         .form-actions
           = f.button :submit, "Sign up"
+    #formFooter
       = render "devise/shared/links"
